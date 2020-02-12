@@ -1,3 +1,5 @@
+| misc.js:12:4:12:5 | .* | This part of the regular expression may cause exponential backtracking on strings containing many repetitions of ','. |
+| misc.js:30:51:30:62 | [\\x21-\\x7E]* | This part of the regular expression may cause exponential backtracking on strings containing many repetitions of '?'. |
 | regexplib/address.js:51:803:51:811 | [A-Za-z]+ | This part of the regular expression may cause exponential backtracking on strings containing many repetitions of 'A'. |
 | regexplib/address.js:75:803:75:811 | [A-Za-z]+ | This part of the regular expression may cause exponential backtracking on strings containing many repetitions of 'A'. |
 | regexplib/dates.js:66:133:66:139 | JANUARY | This part of the regular expression may cause exponential backtracking on strings containing many repetitions of 'JANUARY'. |
