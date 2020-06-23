@@ -786,7 +786,32 @@ module DataFlow {
 
     override Expr getPropertyNameExpr() { result = astNode.getPropertyNameExpr() }
 
-    override string getPropertyName() { result = astNode.getPropertyName() }
+    override string getPropertyName() {
+      result = astNode.getPropertyName()
+      or
+      exists(EffectivelyConstantStringVariable var |
+        var.isCaptured() and
+        this.getPropertyNameExpr() = var.getAnAccess() and
+        result = var.getValue()
+      )
+      or
+      result = getPropertyNameExpr().flow().getImmediatePredecessor*().getStringValue()
+    }
+  }
+
+  /**
+   * A local variable with exactly one definition, not counting implicit initialization.
+   */
+  private class EffectivelyConstantStringVariable extends LocalVariable {
+    EffectivelyConstantStringVariable() {
+      strictcount(SsaExplicitDefinition ssa | ssa.getSourceVariable() = this) = 1
+    }
+
+    /** Gets the SSA definition of this variable. */
+    SsaExplicitDefinition getSsaDefinition() { result.getSourceVariable() = this }
+
+    /** Gets the string representing the value of this variable, if one exists. */
+    string getValue() { result = getSsaDefinition().getRhsNode().getStringValue() }
   }
 
   /**
