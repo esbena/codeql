@@ -1,4 +1,56 @@
+| EventEmitter in module 'events' |
 | MK in unknown scope |
 | Mapped in library-tests/TypeScript/RegressionTests/EmptyName/test.ts |
+| NodeJS in global scope |
+| NodeJS in global scope |
+| NodeJS.EventEmitter in global scope |
+| NodeJS.Module in global scope |
+| NodeModule in global scope |
 | fn in library-tests/TypeScript/RegressionTests/EmptyName/test.ts |
 | library-tests/TypeScript/RegressionTests/EmptyName/test.ts |
+| module 'argparse' |
+| module 'assert' |
+| module 'async_hooks' |
+| module 'buffer' |
+| module 'child_process' |
+| module 'cluster' |
+| module 'color-name' |
+| module 'console' |
+| module 'constants' |
+| module 'crypto' |
+| module 'dgram' |
+| module 'dns' |
+| module 'domain' |
+| module 'events' |
+| module 'fs' |
+| module 'fs/promises' |
+| module 'http2' |
+| module 'http' |
+| module 'https' |
+| module 'inspector' |
+| module 'module' |
+| module 'net' |
+| module 'os' |
+| module 'parse-json' |
+| module 'path' |
+| module 'perf_hooks' |
+| module 'process' |
+| module 'punycode' |
+| module 'querystring' |
+| module 'readline' |
+| module 'repl' |
+| module 'stream' |
+| module 'string_decoder' |
+| module 'table' |
+| module 'timers' |
+| module 'tls' |
+| module 'trace_events' |
+| module 'tty' |
+| module 'unist' |
+| module 'url' |
+| module 'util' |
+| module 'v8' |
+| module 'vm' |
+| module 'wasi' |
+| module 'worker_threads' |
+| module 'zlib' |

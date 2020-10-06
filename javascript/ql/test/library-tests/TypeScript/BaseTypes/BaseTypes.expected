@@ -7,9 +7,13 @@
 | CImplementsString | IGenericBase |
 | CStringSub | CGenericBase |
 | CSub | CBase |
+| EventEmitter | EventEmitter |
 | IEmptySub | IEmpty |
 | IGenericSub | IGenericBase |
 | IMulti | IBase |
 | IMulti | IGenericBase |
 | IStringSub | IGenericBase |
 | ISub | IBase |
+| Module | NodeModule |
+| NodeModule | Module |
+| internal | EventEmitter |

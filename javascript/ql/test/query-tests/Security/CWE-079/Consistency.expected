@@ -1,0 +1,11 @@
+| query-tests/Security/CWE-079/exception-xss.js:149 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-079/exception-xss.js:175 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-079/tst.js:343 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-079/tst.js:349 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-079/tst.js:356 | expected an alert, but found none | NOT OK. (this is a jQuery object) |  |
+| query-tests/Security/CWE-079/tst.js:360 | expected an alert, but found none | NOT OK. (this is a DOM-node); |  |
+| query-tests/Security/CWE-079/tst.js:363 | expected an alert, but found none | NOT OK. |  |
+| query-tests/Security/CWE-079/tst.js:417 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-079/tst.js:421 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-079/tst.js:424 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-079/xss-through-dom.js:71 | expected an alert, but found none | NOT OK. |  |

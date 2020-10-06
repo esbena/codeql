@@ -21,6 +21,7 @@
 | H in namespaces.ts:27 |
 | H.I in namespaces.ts:27 |
 | N in library-tests/TypeScript/QualifiedNameResolution/export-specifiers.ts |
+| NodeJS in global scope |
 | X in global scope |
 | X in library-tests/TypeScript/QualifiedNameResolution/namespaces.ts |
 | X.Y in library-tests/TypeScript/QualifiedNameResolution/namespaces.ts |
@@ -31,3 +32,4 @@
 | library-tests/TypeScript/QualifiedNameResolution/otherlib.ts |
 | library-tests/TypeScript/QualifiedNameResolution/reexport-all.ts |
 | library-tests/TypeScript/QualifiedNameResolution/reexport-named.ts |
+| module 'events' |

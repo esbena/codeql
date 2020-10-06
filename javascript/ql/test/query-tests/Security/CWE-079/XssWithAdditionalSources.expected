@@ -403,26 +403,6 @@ nodes
 | tst.js:327:18:327:34 | document.location |
 | tst.js:332:18:332:35 | params.get('name') |
 | tst.js:332:18:332:35 | params.get('name') |
-| tst.js:341:20:341:36 | document.location |
-| tst.js:341:20:341:36 | document.location |
-| tst.js:343:5:343:30 | getUrl( ... ring(1) |
-| tst.js:343:5:343:30 | getUrl( ... ring(1) |
-| tst.js:348:7:348:39 | target |
-| tst.js:348:16:348:32 | document.location |
-| tst.js:348:16:348:32 | document.location |
-| tst.js:348:16:348:39 | documen ... .search |
-| tst.js:349:12:349:17 | target |
-| tst.js:349:12:349:17 | target |
-| tst.js:355:10:355:42 | target |
-| tst.js:355:19:355:35 | document.location |
-| tst.js:355:19:355:35 | document.location |
-| tst.js:355:19:355:42 | documen ... .search |
-| tst.js:356:16:356:21 | target |
-| tst.js:356:16:356:21 | target |
-| tst.js:360:21:360:26 | target |
-| tst.js:360:21:360:26 | target |
-| tst.js:363:18:363:23 | target |
-| tst.js:363:18:363:23 | target |
 | tst.js:371:7:371:39 | target |
 | tst.js:371:16:371:32 | document.location |
 | tst.js:371:16:371:32 | document.location |
@@ -453,23 +433,6 @@ nodes
 | tst.js:408:19:408:31 | target.taint8 |
 | tst.js:409:18:409:30 | target.taint8 |
 | tst.js:409:18:409:30 | target.taint8 |
-| tst.js:416:7:416:46 | payload |
-| tst.js:416:17:416:31 | window.location |
-| tst.js:416:17:416:31 | window.location |
-| tst.js:416:17:416:46 | window. ... bstr(1) |
-| tst.js:417:18:417:24 | payload |
-| tst.js:417:18:417:24 | payload |
-| tst.js:419:7:419:55 | match |
-| tst.js:419:15:419:29 | window.location |
-| tst.js:419:15:419:29 | window.location |
-| tst.js:419:15:419:55 | window. ... (\\w+)/) |
-| tst.js:421:20:421:24 | match |
-| tst.js:421:20:421:27 | match[1] |
-| tst.js:421:20:421:27 | match[1] |
-| tst.js:424:18:424:32 | window.location |
-| tst.js:424:18:424:32 | window.location |
-| tst.js:424:18:424:51 | window. ... '#')[1] |
-| tst.js:424:18:424:51 | window. ... '#')[1] |
 | typeahead.js:9:28:9:30 | loc |
 | typeahead.js:9:28:9:30 | loc |
 | typeahead.js:10:16:10:18 | loc |
@@ -729,7 +692,6 @@ edges
 | tst.js:70:3:70:19 | document.location | tst.js:70:3:70:26 | documen ... .search |
 | tst.js:70:3:70:19 | document.location | tst.js:70:3:70:26 | documen ... .search |
 | tst.js:70:3:70:26 | documen ... .search | tst.js:70:1:70:27 | [,docum ... search] |
-| tst.js:70:3:70:26 | documen ... .search | tst.js:70:46:70:46 | x |
 | tst.js:70:46:70:46 | x | tst.js:73:20:73:20 | x |
 | tst.js:70:46:70:46 | x | tst.js:73:20:73:20 | x |
 | tst.js:77:49:77:65 | document.location | tst.js:77:49:77:72 | documen ... .search |
@@ -857,24 +819,6 @@ edges
 | tst.js:327:18:327:34 | document.location | tst.js:332:18:332:35 | params.get('name') |
 | tst.js:327:18:327:34 | document.location | tst.js:332:18:332:35 | params.get('name') |
 | tst.js:327:18:327:34 | document.location | tst.js:332:18:332:35 | params.get('name') |
-| tst.js:341:20:341:36 | document.location | tst.js:343:5:343:30 | getUrl( ... ring(1) |
-| tst.js:341:20:341:36 | document.location | tst.js:343:5:343:30 | getUrl( ... ring(1) |
-| tst.js:341:20:341:36 | document.location | tst.js:343:5:343:30 | getUrl( ... ring(1) |
-| tst.js:341:20:341:36 | document.location | tst.js:343:5:343:30 | getUrl( ... ring(1) |
-| tst.js:348:7:348:39 | target | tst.js:349:12:349:17 | target |
-| tst.js:348:7:348:39 | target | tst.js:349:12:349:17 | target |
-| tst.js:348:16:348:32 | document.location | tst.js:348:16:348:39 | documen ... .search |
-| tst.js:348:16:348:32 | document.location | tst.js:348:16:348:39 | documen ... .search |
-| tst.js:348:16:348:39 | documen ... .search | tst.js:348:7:348:39 | target |
-| tst.js:355:10:355:42 | target | tst.js:356:16:356:21 | target |
-| tst.js:355:10:355:42 | target | tst.js:356:16:356:21 | target |
-| tst.js:355:10:355:42 | target | tst.js:360:21:360:26 | target |
-| tst.js:355:10:355:42 | target | tst.js:360:21:360:26 | target |
-| tst.js:355:10:355:42 | target | tst.js:363:18:363:23 | target |
-| tst.js:355:10:355:42 | target | tst.js:363:18:363:23 | target |
-| tst.js:355:19:355:35 | document.location | tst.js:355:19:355:42 | documen ... .search |
-| tst.js:355:19:355:35 | document.location | tst.js:355:19:355:42 | documen ... .search |
-| tst.js:355:19:355:42 | documen ... .search | tst.js:355:10:355:42 | target |
 | tst.js:371:7:371:39 | target | tst.js:374:18:374:23 | target |
 | tst.js:371:7:371:39 | target | tst.js:374:18:374:23 | target |
 | tst.js:371:16:371:32 | document.location | tst.js:371:16:371:39 | documen ... .search |
@@ -903,21 +847,6 @@ edges
 | tst.js:408:19:408:31 | target.taint8 | tst.js:408:19:408:31 | target.taint8 |
 | tst.js:408:19:408:31 | target.taint8 | tst.js:409:18:409:30 | target.taint8 |
 | tst.js:408:19:408:31 | target.taint8 | tst.js:409:18:409:30 | target.taint8 |
-| tst.js:416:7:416:46 | payload | tst.js:417:18:417:24 | payload |
-| tst.js:416:7:416:46 | payload | tst.js:417:18:417:24 | payload |
-| tst.js:416:17:416:31 | window.location | tst.js:416:17:416:46 | window. ... bstr(1) |
-| tst.js:416:17:416:31 | window.location | tst.js:416:17:416:46 | window. ... bstr(1) |
-| tst.js:416:17:416:46 | window. ... bstr(1) | tst.js:416:7:416:46 | payload |
-| tst.js:419:7:419:55 | match | tst.js:421:20:421:24 | match |
-| tst.js:419:15:419:29 | window.location | tst.js:419:15:419:55 | window. ... (\\w+)/) |
-| tst.js:419:15:419:29 | window.location | tst.js:419:15:419:55 | window. ... (\\w+)/) |
-| tst.js:419:15:419:55 | window. ... (\\w+)/) | tst.js:419:7:419:55 | match |
-| tst.js:421:20:421:24 | match | tst.js:421:20:421:27 | match[1] |
-| tst.js:421:20:421:24 | match | tst.js:421:20:421:27 | match[1] |
-| tst.js:424:18:424:32 | window.location | tst.js:424:18:424:51 | window. ... '#')[1] |
-| tst.js:424:18:424:32 | window.location | tst.js:424:18:424:51 | window. ... '#')[1] |
-| tst.js:424:18:424:32 | window.location | tst.js:424:18:424:51 | window. ... '#')[1] |
-| tst.js:424:18:424:32 | window.location | tst.js:424:18:424:51 | window. ... '#')[1] |
 | typeahead.js:9:28:9:30 | loc | typeahead.js:10:16:10:18 | loc |
 | typeahead.js:9:28:9:30 | loc | typeahead.js:10:16:10:18 | loc |
 | typeahead.js:9:28:9:30 | loc | typeahead.js:10:16:10:18 | loc |

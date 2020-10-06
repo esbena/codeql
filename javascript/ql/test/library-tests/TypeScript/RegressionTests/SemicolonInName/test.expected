@@ -1,2 +1,5 @@
 | Bar.Foo in global scope | Bar in global scope |
+| EventEmitter in module 'events' | module 'events' |
+| NodeJS.EventEmitter in global scope | NodeJS in global scope |
+| NodeJS.Module in global scope | NodeJS in global scope |
 | fn in library-tests/TypeScript/RegressionTests/SemicolonInName/test.ts | library-tests/TypeScript/RegressionTests/SemicolonInName/test.ts |
