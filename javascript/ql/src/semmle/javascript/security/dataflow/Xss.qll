@@ -183,8 +183,6 @@ module DomBasedXss {
       this = any(Typeahead::TypeaheadSuggestionFunction f).getAReturn()
       or
       this = any(Handlebars::SafeString s).getAnArgument()
-      or
-      this = any(JQuery::MethodCall call | call.getMethodName() = "jGrowl").getArgument(0)
     }
   }
 
