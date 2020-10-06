@@ -627,13 +627,6 @@ module TaintedPath {
   }
 
   /**
-   * The path argument of a [send](https://www.npmjs.com/package/send) call, viewed as a sink.
-   */
-  class SendPathSink extends Sink, DataFlow::ValueNode {
-    SendPathSink() { this = DataFlow::moduleImport("send").getACall().getArgument(1) }
-  }
-
-  /**
    * Holds if there is a step `src -> dst` mapping `srclabel` to `dstlabel` relevant for path traversal vulnerabilities.
    */
   predicate isAdditionalTaintedPathFlowStep(
