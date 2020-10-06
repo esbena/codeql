@@ -114,40 +114,14 @@ private module Postgres {
     result = DataFlow::moduleImport("pg-pool").getAnInstantiation()
   }
 
-  /** Gets a data flow node referring to a connection pool. */
-  private DataFlow::SourceNode pool(DataFlow::TypeTracker t) {
-    t.start() and
-    result = newPool()
-    or
-    exists(DataFlow::TypeTracker t2 | result = pool(t2).track(t2, t))
-  }
-
-  /** Gets a data flow node referring to a connection pool. */
-  DataFlow::SourceNode pool() { result = pool(DataFlow::TypeTracker::end()) }
-
   /** Gets a creation of a Postgres client. */
   DataFlow::InvokeNode newClient() {
     result = DataFlow::moduleImport("pg").getAConstructorInvocation("Client")
   }
 
-  /** Gets a data flow node referring to a Postgres client. */
-  private DataFlow::SourceNode client(DataFlow::TypeTracker t) {
-    t.start() and
-    (
-      result = newClient()
-      or
-      result = pool().getAMethodCall("connect").getABoundCallbackParameter(0, 1)
-    )
-    or
-    exists(DataFlow::TypeTracker t2 | result = client(t2).track(t2, t))
-  }
-
-  /** Gets a data flow node referring to a Postgres client. */
-  DataFlow::SourceNode client() { result = client(DataFlow::TypeTracker::end()) }
-
   /** A call to the Postgres `query` method. */
   private class QueryCall extends DatabaseAccess, DataFlow::MethodCallNode {
-    QueryCall() { this = [client(), pool()].getAMethodCall("query") }
+    QueryCall() { this = [newClient(), newPool()].getAMethodCall("query") }
 
     override DataFlow::Node getAQueryArgument() { result = getArgument(0) }
   }
