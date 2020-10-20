@@ -15,3 +15,4 @@
 | query-tests/Security/CWE-089/untyped/mongoose.js:89 | expected an alert, but found none | NOT OK |  |
 | query-tests/Security/CWE-089/untyped/mongoose.js:94 | expected an alert, but found none | NOT OK |  |
 | query-tests/Security/CWE-089/untyped/mongoose.js:96 | expected an alert, but found none | NOT OK |  |
+| query-tests/Security/CWE-089/untyped/tst2.js:8 | expected an alert, but found none | NOT OK |  |
