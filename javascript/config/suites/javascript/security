@@ -1,1 +1,2 @@
 + semmlecode-javascript-queries/Security/CWE-079/Xss.ql: /Security/CWE/CWE-079
++ semmlecode-javascript-queries/Security/CWE-730/ServerCrash.ql: /Security/CWE/CWE-730
